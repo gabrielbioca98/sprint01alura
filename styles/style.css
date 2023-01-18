@@ -1,0 +1,221 @@
+.container{
+    width: 1440px;
+    height: 1024px;
+    background-color: #F3F5FC;
+}
+
+.logo{
+    position: absolute;
+    width: 31.09px;
+    height: 48px;
+    margin:40px 0 0 84px;
+}
+
+#texto{
+    resize: none;
+    position: absolute;
+    width: 680px;
+    height: 300px;
+    padding: 12px;
+    margin: 168px 0 0 240px;
+    font-size: 32px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    text-transform: lowercase;
+}
+
+#texto-output{
+    resize: none;
+    position: absolute;
+    width: 380px;
+    height: 600px;
+    padding: 12px;
+    margin-top: 20px;
+    margin-left: 12px;
+    font-size: 32px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    text-transform: lowercase;
+}
+
+.texto::placeholder{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border-color:red;
+}
+
+
+.butoes{
+    position: absolute;
+    margin: 885px 0 0 240px;
+}
+
+.legenda{
+    position: absolute;
+    width: 228px;
+    height: 18px;
+    margin: 851px 0 0 264px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    opacity: 0.8;
+    color:#495057;
+}
+
+#but1,#but2, .btn-copiar{
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#but1:hover, #but2:hover, .btn-copiar:hover{
+    scale: 1.05;
+}
+
+#but1{
+    background-color: #0A3871;
+    color: white;
+    margin-right: 24px;
+    border: none;
+}
+
+#but2{
+    background-color:#D8DFE8;
+    color:#0A3871;
+    border: 1px solid  #0A3871;
+}
+
+.btn-copiar{
+    margin: 845px 32px 32px 32px;
+}
+
+#caixa{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    margin: 40px 0 0 1000px;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.imagem{
+    position: absolute;
+    margin: 283px 0 0 32px;
+}
+
+.text1{
+    margin:579px 0 0 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.text2{
+margin-top: 16px;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #495057;
+}
+
+.texto-output{
+    position: absolute;
+    color:red;
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        width: 100%;
+        height: 933px;
+        align-items: center;
+    }
+
+    .logo{
+        margin:24px 0 0 32px;
+    }
+
+    #texto{
+        position: absolute;
+        width: 343px;
+        height: 48px;
+        margin: 152px 0 0 16px;
+    }
+
+
+    #texto-output{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+
+    .butoes{
+        position: absolute;
+        margin: 485px 0 0 16px;
+    }
+
+    .legenda{
+        position: absolute;
+        width: 228px;
+        height: 18px;
+        margin: 451px 0 0 40px;
+    }
+
+    #but1,#but2{
+        width: 343px;
+        height: 67px;
+    }
+
+    #but1{
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+
+    #caixa{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        height: 186px;
+        margin: 707px 0 0 24px;
+    }
+
+    .imagem{
+        display: none;
+    }
+
+    .text1{
+        position: absolute;
+        margin:32px 0 0 32px;
+    }
+    
+    .text2{
+        position: absolute;
+        margin-top: 106px;
+    }
+
+    .btn-copiar{
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/sweetalert.js"></script>
+    <title>Sprint 01 - Decodificador</title>
+</head>
+<body>
+   
+    <div class="container">
+        <img class="logo" src="imagens/logo.svg" alt="Logo Alura">
+        <textarea id="texto" placeholder="Digite seu texto..." maxlength="300"></textarea>
+        <p class="legenda">&#169;Apenas letras minúsculas e sem acento</p>
+        <div id="caixa">
+            <img class="imagem" src="imagens/imagem.svg">
+            <p class="text1">Nenhuma mensagem encontrada.</p>
+            <p class="text2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+
+        <div class="butoes"><button onclick="criptografar()" id="but1">Criptografar</button><button onclick="descriptografar()" id="but2">Descriptografar</button></div>
+    </div>
+    <script src="scripts/criptografia.js"></script>
+</body>
+</html>
